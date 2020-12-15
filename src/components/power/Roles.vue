@@ -84,6 +84,7 @@
       width="50%"
       @close="setRightDialogClosed"
     >
+    <!-- 树形控件 -->
       <el-tree
         :data="rightsList"
         :props="treeProps"
@@ -156,7 +157,7 @@ export default {
         label: 'authName',
         children: 'children'
       },
-      //   默认选中节点ID值
+      //   默认选中节点ID值数组
       defKeys: [],
       //   添加用户对话框
       AddRoleDialogVisible: false,
